@@ -1,41 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet">
-    <title>cart-clicker</title>
-  </head>
-  <body class="flex flex-col h-screen">
-    <button id="myBtn" class="bg-blue-100">
-   Click Me
-  </button>
-    <header class="bg-orange-600 text-white italic text-5xl text-center" > 
-      <h1>Cart Clicker</h1>
-    </header>
 
-    <main class="flex flex-1 text-white text-center">
-      <div class="flex-2 bg-zinc-900"> 
-      Clicker 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>cart-clicker</title>
+</head>
+
+<body class="flex flex-col gap-6 p-6 h-screen">
+  <button id="myBtn" class="bg-blue-100">
+    Click Me
+  </button>
+  <header class="bg-orange-600 text-white italic text-5xl text-center">
+    <h1>Cart Clicker</h1>
+  </header>
+
+  <main class="flex gap-6 flex-1 text-white text-center">
+    <div class="flex-2 gap-6 bg-zinc-900">
+      Clicker
       <p id="scoreDisplay">Score</p>
-      <button id="clicker"> 
-        <img src="/src/assets/cart.png" class="w-1/2">
+      <button class="transition-transform active:translate-y-1" id="clicker">
+        <img class="items-center" src="/src/assets/cart.png" class="">
       </button>
-       
-      </div>
-      <div class="flex-1 bg-fuchsia-900"> 
+
+    </div>
+    <div class="flex-1 gap-x-6 bg-fuchsia-900 ">
       Store
-      </div>
-      <div class="flex-1 bg-emerald-600">
-        Upgrades
-        </div>
-      </div>
-    </main>
+      <br>
+      <br>
+
+    </div>
+    <div class="flex-1 flex flex-col items-center gap-6 bg-emerald-600 ">
+      Upgrades
+      <button id="upgradeOne" class="flex center flex transtition-all bg-black text-lg justify-center p-4">Buy Wheels:
+      <div>
+      <br>
+      $100
+       </button>
+      <p id="upgradeOneCount"></p>
+  </div>
+   
+    
+    </div>
+  </main>
   <h1></h1>
 
-  
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
