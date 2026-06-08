@@ -6,6 +6,8 @@ import soundEffectTwoSrc from './assets/pay.mp3'
 
 import backgroundMusicSrc from './assets/shopping.ogg'
 
+import soundEffectThreeSrc from './assets/money.mp3'
+
 const backgroundMusic = new Howl({
   src: [backgroundMusicSrc],
   autoplay: true,
@@ -21,7 +23,11 @@ const soundEffectTwo = new Howl({
   src: [soundEffectTwoSrc]
 })
 
+const soundEffectThree = new Howl({
+  src: [soundEffectThreeSrc]
+}
 
+)
 
 let score = 0
 
